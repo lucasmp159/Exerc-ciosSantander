@@ -1,0 +1,30 @@
+#1 -- Inserir um valor monetário
+'''
+def valor_monetario():
+    valor = float(input("Inserir um valor: "))
+    desconto = valor * 0.15
+    resultado = valor - desconto
+    print(f'O valor monetário calculado é: $', resultado)
+
+valor_monetario()
+
+
+#2 -- Programa de validação de dados informados
+def validacao():
+    idade = int(input("Digite sua idade: "))
+    salario = float(input("Digite seu salario: "))
+    sexo = input("Digite seu sexo: ")
+    if 0 <= idade <= 150 and 0 <= salario and sexo == ('M' or 'F' or 'Outro'):
+        print(idade, salario, sexo)
+    else:
+        print("Informação invalida")
+validacao()
+
+#3 --> Tabuada de 9
+
+valor = int(input("Inserir um valor pra informar sua tabuada: "))
+count = 0
+while count <= 9:
+    resultado = valor * count
+    print(resultado)
+    count += 1
