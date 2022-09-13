@@ -6,3 +6,10 @@ def listas():
         if x % 2 == 0:
             print(x)
 listas()
+
+# 2 --> Imprimir cada letra em uma linha
+
+palavra = input("Inserir uma palavra: ")
+
+for x in palavra:
+    print(x, end=' ')
