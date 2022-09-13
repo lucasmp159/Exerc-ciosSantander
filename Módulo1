@@ -20,7 +20,34 @@ def validacao():
         print("Informação invalida")
 validacao()
 
-#3 --> Tabuada de 9
+#3 -- > Verificar quem é o assassino
+
+pergunta1 = input("Mora perto da vítima?")
+pergunta2 = input("Já trabalhou com a vítima?")
+pergunta3 = input("Telefonou para a vítima?")
+pergunta4 = input("Esteve no local do crime?")
+pergunta5 = input("Devia para a vítima?")
+count = 0
+if pergunta1 == 'sim':
+    count += 1
+if pergunta2 == 'sim':
+    count += 1
+if pergunta3 == 'sim':
+    count += 1
+if pergunta4 == 'sim':
+    count += 1
+if pergunta5 == 'sim':
+    count += 1
+if count == 5:
+    print("Assassino")
+if 3 <= count <= 4:
+    print("Cúmplice")
+if count == 2:
+    print("Suspeito")
+if  count <= 1:
+    print("Liberado")
+
+#4 --> Tabuada de 9
 
 valor = int(input("Inserir um valor pra informar sua tabuada: "))
 count = 0
