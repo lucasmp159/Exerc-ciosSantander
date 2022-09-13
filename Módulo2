@@ -13,3 +13,14 @@ palavra = input("Inserir uma palavra: ")
 
 for x in palavra:
     print(x, end=' ')
+    
+# 3 --> Soma de listas
+
+lista1 = [1, 4, 3]
+lista2 = [3, 5, 1]
+
+def soma_listas():
+    resultado = [lista1[0] + lista2 [0],lista1[1] + lista2 [1],lista1[2] + lista2 [2]]
+    print(f'A soma das listas será igual a',resultado)
+
+soma_listas()
