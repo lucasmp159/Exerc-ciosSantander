@@ -41,4 +41,6 @@ Ano = {
     "Novembro":'30',
     "Dezembro":'31'
 }
-print(f'{Ano}\n')
+
+for x in Ano:
+    print("{0:5} - {1:2}".format(x, Ano[x]))
